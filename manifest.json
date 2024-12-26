@@ -1,0 +1,37 @@
+{
+    "name": "GESTION EL QUINCHO COCINA",
+    "short_name": "GEQC",
+    "description": "Aplicacion destinado a el uso de una gestion de impresion de pedidos dentro del quincho cocina.",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#2c8e49",
+    "theme_color": "#3367d6",
+    "icons": [
+      {
+        "src": "img/QUINCHOICONO192.ico",
+        "sizes": "192x192",
+        "type": "image/ico"
+      },
+      {
+        "src": "img/QUINCHOICONO512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ], "screenshots": [
+        {
+          "src": "/img/ss360.png",
+          "sizes": "360x632",
+          "type": "image/png"
+          
+        },
+        {
+          "src": "/img/ss1280.png",
+          "sizes": "1280x805",
+          "type": "image/png",
+          "form_factor": "wide"  
+          
+        }
+      ],
+    "scope":"./"
+  }
+  

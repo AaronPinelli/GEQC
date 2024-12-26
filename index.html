@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEQC</title>
+
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="manifest" href="manifest.json">
+
+
+</head>
+
+<body>
+  <header>
+
+    <img src="img/QUINCHOICONO.png" alt="Logo Quincho Cocina">
+    <h2> <span style="color: black;">Gestion</span> EL Quincho Cocina </h2>
+
+
+  </header>
+  <main>
+    <aside id="menu">
+      <h3>Menú</h3>
+      <div id="menuBotones">
+        <button class="menu-button" onclick="showAddItemForm()">Agregar Artículo</button>
+        <button class="menu-button" onclick="loadMenu('hamburguesas')">Hamburguesas</button>
+        <button class="menu-button" onclick="loadMenu('pizzas')">Pizzas</button>
+        <button class="menu-button" onclick="loadMenu('minutas')">Minutas</button>
+        <button class="menu-button" onclick="loadMenu('superpanchos')">SuperPanchos</button>
+        <button class="menu-button" onclick="loadMenu('vegetariano')">Vegetariano</button>
+        <button class="menu-button" onclick="loadMenu('bebidas')">Bebidas</button>
+        <button class="menu-button" onclick="loadMenu('fritas')">Fritas</button>
+        <button class="menu-button" onclick="loadMenu('envios')">Envios</button>
+      </div>
+      <button id="back-button" class="menu-button" style="background-color: red; display: none;"
+        onclick="goBack()">Atrás</button>
+
+      <div id="menu-items"></div>
+    </aside>
+
+    <div id="content">
+      <section id="create-order">
+        <h2>Crear Pedido</h2>
+        <form id="order-form">
+          <input type="text" id="order-name" placeholder="Nombre del cliente" required>
+          <input type="text" id="order-address" placeholder="Dirección" required>
+          <h3>Artículos</h3>
+          <ul id="order-list"></ul>
+          <p><strong>Total:</strong> $<span id="order-total">0.00</span></p>
+          <button type="button" onclick="saveOrder()">Guardar Pedido</button>
+          <button type="button" onclick="printOrder()">Imprimir Pedido</button>
+        </form>
+      </section>
+
+      <section id="order-history">
+        <h2>Historial de Pedidos</h2>
+        <ul id="history-list"></ul>
+      </section>
+    </div>
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <script src="scriptP.js"></script>
+</body>
+
+</html>
