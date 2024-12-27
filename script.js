@@ -112,10 +112,11 @@ const menuData = {
       { name: 'Tarta Jam, Ques, Huev, Tomate con Ensalada', price: 5500 },
       { name: 'Cubiertos Descartables', price: 300 }
     ],
-    envios: [
+    envios: [{ name: 'Envio', price: 300 },
       { name: 'Envio', price: 400 },
       { name: 'Envio', price: 500 },
-      { name: 'Envio', price: 600 }
+      { name: 'Envio', price: 600 },
+           { name: 'Envio', price: 700 }  
     ]
   };
 
